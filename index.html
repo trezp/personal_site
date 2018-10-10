@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Treasure Porth's Personal Website</title>
 </head>
 <body>
   <div id="app">
     <div v-for="repo in repos">
       <h2>{{repo.name}}</h2>
-      <a :href="repo.html_url">Repo</a>
-      <a v-if="repo.homepage" :href="repo.homepage">Demo</a>
-      {{repo.description}}
+      <p>{{repo.description}}</p>
+      <div>
+        <a :href="repo.html_url">Repo</a>
+        <a v-if="repo.homepage" :href="repo.homepage">Demo</a>
+      </div>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
