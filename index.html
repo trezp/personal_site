@@ -8,14 +8,20 @@
 </head>
 <body>
   <div id="app">
-    <div v-for="repo in repos">
-      <h2>{{repo.name}}</h2>
-      <p>{{repo.description}}</p>
-      <div>
-        <a :href="repo.html_url">Repo</a>
-        <a v-if="repo.homepage" :href="repo.homepage">Demo</a>
+    <h1>Recent Projects</h1>
+    <div v-if="repos">
+      <div v-for="repo in repos">
+        <h2>{{repo.name}}</h2>
+        <p v-if="repo.description">{{repo.description}}</p>
+        <p>{{repo.readme}}</p>
+        <div>
+          <a :href="repo.html_url">Repo</a>
+          <a v-if="repo.homepage" :href="repo.homepage">Demo</a>
+        </div>
       </div>
-    </div>
+    </div> 
+    <div v-else>Oops, there appears to be a problem! 
+      View my recent projects <a href="https://github.com/trezp?tab=repositories">on Github.</a></div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
