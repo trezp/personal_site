@@ -13,22 +13,22 @@ new Vue({
           this.repos.push(response.data[i]);
         }
     })
-    .then((repos)=>{
-      console.log(this.repos)
-      this.repos.forEach((repo) => {
-        axios(`https://api.github.com/repos/trezp/${repo.name}/readme`,{
-          headers: {
-            "Accept": "application/vnd.github.VERSION.raw"
-          }
-        })
-        .then((response) => {
-            this.repos.readme = response.data
-            console.log(repos)
-        })
-        .catch((err)=>{
-          console.log(err)
-        });
-      });
-    });
+    //   .then((repos)=>{
+    //     console.log(this.repos)
+    //     this.this.repos.forEach((repo) => {
+    //       return axios(`https://api.github.com/repos/trezp/${repo.name}/readme`,{
+    //         headers: {
+    //           "Accept": "application/vnd.github.VERSION.raw"
+    //         }
+    //       })
+    //   .then((response) => {
+    //       this.repos.readme = response.data
+    //       console.log(repos)
+    //     })
+    //     .catch((err)=>{
+    //       console.log(err)
+    //     });
+    //   });
+    // });
   }
 });
