@@ -1,8 +1,13 @@
 @import "./node_modules/bulma/sass/utilities/_all.sass";
 @import "./node_modules/bulma/sass/base/_all";
 @import "./node_modules/bulma/sass/grid/columns";
+@import "./node_modules/bulma/sass/elements/_all";
 @import "./header";
 
 body {
-  background-image: url();
+  background-image: url("/images/cityscape.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
