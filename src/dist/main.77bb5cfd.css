@@ -5116,17 +5116,22 @@ a.tag:hover {
   vertical-align: top;
 }
 
-.container {
-  max-width: 90%;
-  margin: auto;
-}
-
 body {
   background-image: url("/cityscape.3a6a0c07.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.image img {
+  height: 25%;
+  width: 25%;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
