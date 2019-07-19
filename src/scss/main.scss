@@ -4,6 +4,9 @@
 @import "./node_modules/bulma/sass/elements/_all";
 @import "./header";
 
+$accent-color: #8f0853;
+$spacing-unit: 30px;
+
 body {
   background-image: url("/images/cityscape.jpg");
   background-repeat: no-repeat;
@@ -12,12 +15,35 @@ body {
   height: 100vh;
 }
 
+p {
+  padding-bottom: $spacing-unit / 3;
+}
+
+.title {
+  font-weight: bold;
+}
+
 .container {
   max-width: 90%;
   margin: auto;
 }
 
-.image img {
-  height: 25%;
-  width: 25%;
+header {
+  .is-full {
+    text-align: center;
+    padding: $spacing-unit;
+
+    .title {
+      font-size: 4em;
+    }
+  }
+  .is-one-quarter,
+  .is-three-quarters {
+    padding: $spacing-unit;
+    align-self: center;
+  }
+  .is-three-quarters span {
+    font-weight: bold;
+    color: $accent-color;
+  }
 }

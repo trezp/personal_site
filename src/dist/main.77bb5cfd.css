@@ -5124,14 +5124,34 @@ body {
   height: 100vh;
 }
 
+p {
+  padding-bottom: 10px;
+}
+
+.title {
+  font-weight: bold;
+}
+
 .container {
   max-width: 90%;
   margin: auto;
 }
 
-.image img {
-  height: 25%;
-  width: 25%;
+header .is-full {
+  text-align: center;
+  padding: 30px;
+}
+header .is-full .title {
+  font-size: 4em;
+}
+header .is-one-quarter,
+header .is-three-quarters {
+  padding: 30px;
+  align-self: center;
+}
+header .is-three-quarters span {
+  font-weight: bold;
+  color: #8f0853;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
