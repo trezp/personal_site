@@ -1,1 +1,1 @@
-My personal website, featuring github api integration. 
+Everything you need to know about Treasure Porth, JavaScript Developer.
