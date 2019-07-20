@@ -23,31 +23,8 @@ p {
   font-weight: bold;
 }
 
-// .container {
-//   max-width: 90%;
-//   margin: auto;
-// }
-
-header {
-  .is-full {
-    text-align: center;
-    //padding: $spacing-unit;
-
-    .title {
-      font-size: 4em;
-    }
-  }
-  .is-one-third,
-  .is-two-thirds {
-    //padding: $spacing-unit;
-    align-self: center;
-  }
-  .is-two-thirds span {
-  }
-}
-
 .sidebar {
-  padding: $spacing-unit * 2 $spacing-unit;
+  padding: $spacing-unit;
   text-align: center;
 
   .social {

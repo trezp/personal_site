@@ -5124,18 +5124,8 @@ p {
   font-weight: bold;
 }
 
-header .is-full {
-  text-align: center;
-}
-header .is-full .title {
-  font-size: 4em;
-}
-header .is-one-third,
-header .is-two-thirds {
-  align-self: center;
-}
 .sidebar {
-  padding: 60px 30px;
+  padding: 30px;
   text-align: center;
 }
 .sidebar .social {
