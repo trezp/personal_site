@@ -7,13 +7,13 @@
 $accent-color: #8f0853;
 $spacing-unit: 30px;
 
-body {
-  background-image: url("/images/cityscape.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-}
+// body {
+//   background-image: url("/images/cityscape.jpg");
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+//   height: 100vh;
+// }
 
 p {
   padding-bottom: $spacing-unit / 3;
@@ -23,27 +23,65 @@ p {
   font-weight: bold;
 }
 
-.container {
-  max-width: 90%;
-  margin: auto;
-}
+// .container {
+//   max-width: 90%;
+//   margin: auto;
+// }
 
 header {
   .is-full {
     text-align: center;
-    padding: $spacing-unit;
+    //padding: $spacing-unit;
 
     .title {
       font-size: 4em;
     }
   }
-  .is-one-quarter,
-  .is-three-quarters {
-    padding: $spacing-unit;
+  .is-one-third,
+  .is-two-thirds {
+    //padding: $spacing-unit;
     align-self: center;
   }
-  .is-three-quarters span {
-    font-weight: bold;
-    color: $accent-color;
+  .is-two-thirds span {
+  }
+}
+
+.sidebar {
+  padding: $spacing-unit * 2 $spacing-unit;
+  text-align: center;
+
+  .social {
+    text-align: center;
+
+    .fab {
+      font-size: 2em;
+      padding-top: $spacing-unit / 2;
+      margin: 2px;
+    }
+  }
+
+  h1,
+  h5 {
+    text-align: center;
+    font-weight: 200;
+  }
+
+  .intro {
+    text-align: left;
+
+    span {
+      font-weight: bold;
+      color: $accent-color;
+    }
+  }
+
+  figure {
+    padding-bottom: $spacing-unit;
+
+    img {
+      max-height: 150px;
+      max-width: 150px;
+      margin: auto;
+    }
   }
 }

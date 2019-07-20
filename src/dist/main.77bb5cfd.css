@@ -5116,14 +5116,6 @@ a.tag:hover {
   vertical-align: top;
 }
 
-body {
-  background-image: url("/cityscape.3a6a0c07.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-}
-
 p {
   padding-bottom: 10px;
 }
@@ -5132,26 +5124,47 @@ p {
   font-weight: bold;
 }
 
-.container {
-  max-width: 90%;
-  margin: auto;
-}
-
 header .is-full {
   text-align: center;
-  padding: 30px;
 }
 header .is-full .title {
   font-size: 4em;
 }
-header .is-one-quarter,
-header .is-three-quarters {
-  padding: 30px;
+header .is-one-third,
+header .is-two-thirds {
   align-self: center;
 }
-header .is-three-quarters span {
+.sidebar {
+  padding: 60px 30px;
+  text-align: center;
+}
+.sidebar .social {
+  text-align: center;
+}
+.sidebar .social .fab {
+  font-size: 2em;
+  padding-top: 15px;
+  margin: 2px;
+}
+.sidebar h1,
+.sidebar h5 {
+  text-align: center;
+  font-weight: 200;
+}
+.sidebar .intro {
+  text-align: left;
+}
+.sidebar .intro span {
   font-weight: bold;
   color: #8f0853;
+}
+.sidebar figure {
+  padding-bottom: 30px;
+}
+.sidebar figure img {
+  max-height: 150px;
+  max-width: 150px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
