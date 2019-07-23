@@ -2,63 +2,98 @@
 @import "./node_modules/bulma/sass/base/_all";
 @import "./node_modules/bulma/sass/grid/columns";
 @import "./node_modules/bulma/sass/elements/_all";
-@import "./header";
 
 $accent-color: #8f0853;
 $spacing-unit: 30px;
 
-// body {
-//   background-image: url("/images/cityscape.jpg");
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-//   height: 100vh;
-// }
+body {
+  background: url("/images/untitled.svg");
+  background-repeat: no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  max-width: 80%;
+  margin: auto;
+}
 
 p {
   padding-bottom: $spacing-unit / 3;
 }
-
-.title {
-  font-weight: bold;
-}
-
-.sidebar {
-  padding: $spacing-unit;
-  text-align: center;
-
+.content-left {
   .social {
-    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: $spacing-unit;
 
     .fab {
-      font-size: 2em;
+      font-size: 4em;
       padding-top: $spacing-unit / 2;
       margin: 2px;
     }
   }
+}
+.main-content {
+  padding: $spacing-unit;
+  text-align: center;
+  position: relative;
 
   h1,
   h5 {
     text-align: center;
     font-weight: 200;
+    margin: 0;
+    position: absolute;
+    font-size: 5em;
+    left: 23px;
+    top: 70px;
   }
 
   .intro {
     text-align: left;
+    padding-top: $spacing-unit;
 
     span {
       font-weight: bold;
       color: $accent-color;
     }
   }
+}
 
-  figure {
-    padding-bottom: $spacing-unit;
+.logo {
+  position: relative;
+  display: inline-block;
+  border-radius: 5%;
+  overflow: hidden;
 
-    img {
-      max-height: 150px;
-      max-width: 150px;
-      margin: auto;
+  .logo-image-box {
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &:after {
+      content: "";
+      background: url("/images/colorheadshot.jpg");
+      background-size: cover;
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
     }
+  }
+
+  h1 {
+    position: absolute;
+    bottom: -80px;
+    left: 35px;
+    font-size: 4em;
+    font-weight: bold;
+    line-height: 300%;
   }
 }
