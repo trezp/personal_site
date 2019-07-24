@@ -34,7 +34,6 @@ p {
   }
 }
 .main-content {
-  padding: $spacing-unit;
   text-align: center;
   position: relative;
 
@@ -44,18 +43,14 @@ p {
     position: absolute;
     font-size: 8.5em;
     left: -225px;
-    top: 185px;
+    top: 130px;
     white-space: nowrap;
   }
 
   .intro {
     text-align: left;
-    padding-top: $spacing-unit * 4;
-
-    span {
-      font-weight: bold;
-      color: $accent-color;
-    }
+    padding-top: $spacing-unit * 3;
+    font-size: 1.1em;
   }
 }
 
