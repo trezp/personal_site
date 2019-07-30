@@ -1,5 +1,6 @@
+/dist
 */dist
-*/node_modules/
+/node_modules/
 .prettierrc
 .vscode
 .cache
