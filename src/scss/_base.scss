@@ -3,7 +3,18 @@ $spacing-unit: 10px;
 $link: $accent-color;
 
 .columns {
-  padding: $spacing-unit * 10 0;
+  @media (min-width: $desktop) {
+    padding-bottom: $spacing-unit * 15;
+  }
+}
+.column.is-padded {
+  padding: $spacing-unit * 6;
+}
+
+iframe {
+  height: 460px;
+  width: 100%;
+  max-width: 100%;
 }
 h1.title {
   font-weight: 100;
@@ -18,9 +29,4 @@ h2.title {
 }
 h5.title {
   font-size: 2rem;
-}
-
-iframe {
-  height: 460px;
-  width: 100%;
 }

@@ -1,0 +1,27 @@
+.about {
+  .is-full {
+    display: flex;
+  }
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: auto;
+
+    @media (min-width: $tablet) {
+      flex-wrap: nowrap;
+    }
+  }
+  img {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    padding: $spacing-unit * 3;
+  }
+
+  .about-text {
+    align-self: center;
+    padding: $spacing-unit * 3;
+    padding-left: 0;
+  }
+}
