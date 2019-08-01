@@ -1,9 +1,26 @@
 $accent-color: #8f0853;
-$spacing-unit: 2rem;
+$spacing-unit: 10px;
+$link: $accent-color;
 
-body {
-  background: url("/images/background6.svg");
-  background-repeat: no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
+.columns {
+  padding: $spacing-unit * 10 0;
+}
+h1.title {
+  font-weight: 100;
+
+  @media (min-width: $tablet) {
+    font-size: 3rem;
+  }
+}
+
+h2.title {
+  font-size: 3rem;
+}
+h5.title {
+  font-size: 2rem;
+}
+
+iframe {
+  height: 460px;
+  width: 100%;
 }
