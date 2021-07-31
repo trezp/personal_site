@@ -13,15 +13,44 @@
     }
   }
   img {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 200px;
+    max-height: 200px;
     border-radius: 50%;
-    padding: $spacing-unit * 3;
+    padding: $spacing-unit * 2;
+    padding-right: $spacing-unit * 3;
   }
 
   .about-text {
     align-self: center;
     padding: $spacing-unit * 3;
     padding-left: 0;
+  }
+
+  .about-content {
+    ul {
+      display: flex;
+      justify-content: center;
+
+      li {
+        padding-right: 15px;
+      }
+    }
+  }
+}
+
+.origin-story {
+  width: 90%;
+  margin: auto;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+  }
+
+  .star,
+  .title {
+    text-align: center;
+  }
+  .title {
+    padding-top: $spacing-unit * 2;
   }
 }
