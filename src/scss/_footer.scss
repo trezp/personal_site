@@ -1,0 +1,11 @@
+.footer {
+  background: $color-primary;
+  color: #fff;
+  box-shadow: 10px 10px 27px -4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 10px 10px 27px -4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 10px 10px 27px -4px rgba(0, 0, 0, 0.3);
+
+  .social-icons {
+    justify-content: center;
+  }
+}
