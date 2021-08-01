@@ -4,26 +4,24 @@ header {
 }
 
 .social-icons {
-  height: $spacing-unit * 4;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   color: #fff;
 
   li {
-    padding-right: $spacing-unit * 2;
-
     a {
-      padding: $spacing-unit * 2;
+      padding: $spacing-unit;
+      margin-right: $spacing-unit;
+      display: block;
 
       &:hover {
-        color: blue;
+        background-color: $accent-color;
       }
     }
   }
   .fab,
   .far {
     color: #fff;
-    //padding: $spacing-unit;
   }
 }
