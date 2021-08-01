@@ -1,8 +1,8 @@
 .about {
-  .is-full {
-    display: flex;
-  }
+  display: flex;
+
   .about-content {
+    background: $color-primary;
     display: flex;
     flex-wrap: wrap;
     max-width: 80%;
@@ -24,17 +24,6 @@
     align-self: center;
     padding: $spacing-unit * 3;
     padding-left: 0;
-  }
-
-  .about-content {
-    ul {
-      display: flex;
-      justify-content: center;
-
-      li {
-        padding-right: 15px;
-      }
-    }
   }
 }
 
