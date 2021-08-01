@@ -1,7 +1,11 @@
-$accent-color: #f64c72;
+$accent-color: #f76c6c;
 $spacing-unit: 10px;
 $link: $accent-color;
-$color-primary: #242852;
+$color-primary: #25274d;
+$background-color: #eae7dc;
+
+$title-color-primary: #25274d;
+$title-color-secondary: #25274d;
 
 .columns {
   @media (min-width: $desktop) {
@@ -19,6 +23,7 @@ iframe {
 }
 h1.title {
   font-weight: 100;
+  color: $title-color-primary;
 
   @media (min-width: $tablet) {
     font-size: 3rem;
@@ -27,6 +32,8 @@ h1.title {
 
 h2.title {
   font-size: 3rem;
+  font-weight: 300;
+  color: $title-color-secondary;
 }
 h5.title {
   font-size: 2rem;

@@ -3,3 +3,7 @@
 @import "./header";
 @import "./content_intro";
 @import "./content_main";
+
+body {
+  background: $background-color;
+}

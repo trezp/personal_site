@@ -32,24 +32,42 @@
     }
 
     p {
-      //max-width: 50%;
       margin: auto;
       margin-top: $spacing-unit * 2;
     }
   }
-
-  // .column-intro {
-  //   background-color: $color-primary;
-  // }
 
   img {
     height: 200px;
     width: 200px;
     margin: auto;
     border-radius: 50%;
+    border: 4px solid $accent-color;
   }
 
   svg {
     max-height: 250px;
+  }
+}
+
+.origin-story {
+  width: 90%;
+  margin: auto;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+  }
+
+  .star,
+  .title {
+    text-align: center;
+    color: $title-color-secondary;
+  }
+
+  .star {
+    color: $accent-color;
+  }
+  .title {
+    padding-top: $spacing-unit * 2;
   }
 }
