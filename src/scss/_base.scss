@@ -1,11 +1,15 @@
-$accent-color: #f76c6c;
 $spacing-unit: 10px;
-$link: $accent-color;
-$color-primary: #25274d;
-$background-color: #eae7dc;
 
-$title-color-primary: #25274d;
-$title-color-secondary: #25274d;
+$color-primary: #350b40;
+$color-secondary: #94b5c0;
+$accent-color: #ad6c80;
+$dark: #343a40;
+
+$background-color: #eeeeee;
+
+$title-color-primary: $dark;
+$title-color-secondary: $dark;
+$link: $accent-color;
 
 .columns {
   @media (min-width: $desktop) {
@@ -36,7 +40,7 @@ h1.title {
 h2.title {
   font-size: 3rem;
   font-weight: 300;
-  color: $title-color-secondary;
+  color: $title-color-primary;
 }
 h5.title {
   font-size: 2rem;

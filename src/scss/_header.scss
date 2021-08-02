@@ -1,9 +1,19 @@
 .header {
   background: $color-primary;
   color: #fff;
-  box-shadow: 10px 10px 27px -4px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 10px 10px 27px -4px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 10px 10px 27px -4px rgba(0, 0, 0, 0.3);
+
+  .header-stripe {
+    height: 10px;
+    opacity: 0.9;
+  }
+
+  .header-stripe-1 {
+    background-color: $accent-color;
+  }
+
+  .header-stripe-2 {
+    background-color: $color-secondary;
+  }
 }
 
 .social-icons {
